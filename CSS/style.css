@@ -243,7 +243,48 @@ media Quareis
         font-size: 8px;
         padding: 5px;
     }
-    .comment-area{
-        
-    }
 }
+/*----------------------
+ tablet device
+ ----------------- */
+ @media only screen and (min-width:688px) and (max-width:992px) {
+    .container{
+        width: 100%;
+    }
+    /* --------navugation------- */
+    .logo-heading{
+        text-align: center;
+    }
+    /* ------------- 
+    top heading
+    ----------------- */
+    .top-heading{
+        font-size: 0.7em;
+    }
+    /* -------------
+    popular products
+    ----------------- */
+    .products{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
+    }
+    .see-more-option{
+        text-align: center;
+    }
+    /* ---------------
+    contact area
+    ----------------- */
+    .contact-mediams {
+        display: grid;
+        grid-template-columns: repeat(3, 0.3fr);
+        column-gap: 10px;
+        justify-content: center;
+    }
+    .comment-area{
+        width: 100%;
+    }
+    footer{
+        display: none;
+    }
+ }
