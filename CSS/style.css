@@ -59,15 +59,15 @@ journey section
 /* .button-design:hover{
     color: #E02C6D;
     background-color: white;
-    border: 1px solid #E02C6D; */
-}
+    border: 1px solid #E02C6D;
+} */
 .fa-arrow-right{
     color: white;
 }
 /*-------------------
 product section
 ------------------ */
-.product-heading{
+.product-heading , .contact-heading{
     text-align: center;
     font-size: 2em;
     color:#3A3A3A;
@@ -111,11 +111,29 @@ product section
     text-align: right;
     color: rgba(224, 44, 109, 0.87);
 }
-
+/* --------------
+contact section
+---------------- */
+.contact-mediam{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    box-shadow: 0px 0px 20px rgb(173, 166, 166);
+    border-radius: 10px;
+}
+.whatsapp{
+    text-align: center;
+}
+.email{
+    text-align: center;
+}
+.Office{
+    text-align: center;
+}
 /* --------------
 footer section
 ----------------- */
 .footer-section{
+    width: 100%;
     color: white;
     text-align: center;
     background-color: #0A0826;
