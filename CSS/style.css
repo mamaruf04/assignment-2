@@ -114,20 +114,39 @@ product section
 /* --------------
 contact section
 ---------------- */
-.contact-mediam{
+.contact-mediams{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    box-shadow: 0px 0px 20px rgb(173, 166, 166);
+    grid-template-columns: repeat(3, 0.2fr);
+    column-gap : 10px;
+    justify-content: center;
+}
+.mediam{
+    text-align: center;
+    box-shadow: 0px 0px 20px gray;
     border-radius: 10px;
 }
-.whatsapp{
-    text-align: center;
+.mediam p{
+    font-size: 12px;
 }
-.email{
-    text-align: center;
+/* comment-section */
+.comment-area{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 15px;
+    margin-top: 30px;
 }
-.Office{
-    text-align: center;
+.row-object{
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.submit-button{
+    width: 100px;
+    padding: 10px;
+    background-color: rgba(224, 44, 109, 0.87);
+    color: white;
+    border-radius: 10px;
+    border: 2px solid white;
 }
 /* --------------
 footer section
@@ -151,4 +170,71 @@ footer section
 .social-icon{
     color: white;
     padding: 10px;
+}
+/*------------------------------
+footer end
+------------------------------ */
+
+/* ------------------
+media Quareis
+------------------- */
+
+/* -----mobile device----- */
+@media only screen and ( max-width: 688px) {
+    .container{
+        text-align: center;
+    }
+    .top-area{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+    }
+    .top-heading{
+        order: 2;
+        font-size: 0.5em;
+        align-items: center;
+    }
+    .top-picture{
+        order: 1;
+    }
+    /* -----------------------
+    popular product section 
+    ---------------------------*/
+    .products{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+    }
+    .product-heading{
+        font-size: 1.2em;
+    }
+    .product-details {
+        font-size: 1.5em;
+    }
+    .dollar-width{
+        font-size: 1.2em;
+    }
+    /* -------------
+    contact section
+    ---------------- */
+    .contact-mediams {
+        display: grid;
+        grid-template-columns: repeat(3, 0.5fr);
+    }
+    .contact-heading{
+        font-size: 1.2em;
+    }
+    .mediam{
+        font-size: 8px;
+    }
+    .mediam p{
+        font-size: 8px;
+        padding: 5px;
+    }
+    .comment-area{
+        
+    }
+    footer{
+        display: none;
+    }
 }
